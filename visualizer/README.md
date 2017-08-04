@@ -6,9 +6,9 @@ Tool made in Python, using pygame, which allows skeletons to be displayed and ro
 
 To use this application, you need the following software:
 
-* **Python3**;
-* **NumPy**;
-* **Pygame**.
+* **Python3** (Version: 3.5.2);
+* **NumPy** (Version: 1.13.1);
+* **Pygame** (Version: 1.9.3).
 
 ## Graphical User Interface
 
