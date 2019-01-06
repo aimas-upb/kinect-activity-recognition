@@ -1,0 +1,39 @@
+batch_size: 32
+epochs: 200
+sample_size: 300
+maximum_sample_size: 300
+seed: 120
+log_interval: 1
+checkpoint_interval: 5
+hidden_dim: 256
+
+train_path: /home/aimas/workspace/mihai/dataset/skeleton/train_cross_subject
+test_path: /home/aimas/workspace/mihai/dataset/skeleton/test_cross_subject
+cache_path: /home/aimas/workspace/mihai/kinect-activity-recognition-tests/skeleton-cache
+
+selected_actions: null
+selected_joints: null
+
+use_cache: True
+plot_name: loss_plot.svg
+
+use_validation: True
+validation_fraction: 0.1
+use_sampling: True
+
+preprocessing_threads: 16
+joint_size: 9
+
+model: models.tcnLSTM.TCNModel
+model_args:
+  channel: 441
+  num_class: 60
+  no_of_joints: 25
+  use_data_bn: True
+  joint_size: 9
+
+optimizer: Adam
+optimizer_args:
+  learning_rate: 0.001
+
+loss: torch.nn.CrossEntropyLoss

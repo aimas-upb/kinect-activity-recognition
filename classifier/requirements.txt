@@ -1,0 +1,10 @@
+numpy
+pytorch
+yaml
+tensorboardX
+zipfile
+sklearn
+torchvision
+termcolor
+skimage
+json
